@@ -8,6 +8,10 @@ data/
 #낙헌
 personal/nakon_zoe/3. Side Project/2021.01.25. Gesture Recognition/2021.01.19. Final_Step/3. img_data/img_data.npy
 
+#ignore model
+personal/h0han/recognizing specific objects/tensorflow-yolov4-tflite/data/yolov4.weights
+personal/h0han/recognizing specific objects/tensorflow-yolov4-tflite/checkpoints/
+
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks
 # website: http://jupyter.org/
