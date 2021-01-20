@@ -4,6 +4,7 @@ import colorsys
 import numpy as np
 import tensorflow as tf
 from core.config import cfg
+import os
 
 def load_freeze_layer(model='yolov4', tiny=False):
     if tiny:
@@ -124,6 +125,21 @@ def image_preprocess(image, target_size, gt_boxes=None):
         gt_boxes[:, [1, 3]] = gt_boxes[:, [1, 3]] * scale + dh
         return image_paded, gt_boxes
 
+def save(path, image, classes[class_ind]):
+# 저장하고 싶은 path, image, image의 클래스를 넣고 저장한다.
+    num_index = []
+    file_list = os.listdir(path) # 디렉토리 내 파일 리스트 불러오고
+    # 파일 이름에서 정규표현식 이용해서 인덱스 추가
+    for file in file_list:
+        lst = file.split('_'); idx = int(lst[1].split('.')[0]) # format : person_1.jpg --> 1
+        num_index.append(idx)
+
+    if len(num_index) != 0:
+    # 인덱스에서 최댓값 찾고 최댓값 + 1로 인덱스 붙여 파일 이름으로 저장 --> 지정한 디렉토리 내에
+        cv2.imwrite(path + '{}_%s.jpg'.format(classes[class_ind]) % (max(num_index) + 1), image)
+    else:
+        cv2.imwrite(path + '{}_0.jpg'.format(classes[class_ind]), image)
+
 def draw_bbox(image, bboxes, classes=read_class_names(cfg.YOLO.CLASSES), show_label=True):
     num_classes = len(classes)
     image_h, image_w, _ = image.shape
@@ -160,8 +176,11 @@ def draw_bbox(image, bboxes, classes=read_class_names(cfg.YOLO.CLASSES), show_la
         y2 = int(coor[2])
         img_trim = image[int(y):int(y2), int(x):int(x2)]
         img_trim = cv2.cvtColor(img_trim, cv2.COLOR_BGR2RGB)
+
+        # save(path, img_trim)
+
         if classes[class_ind] == "person":
-            cv2.imwrite('./result_fig/%s.jpg' % i, img_trim)
+            cv2.imwrite(filename = './result_fig/person_%s.jpg' % i, image = img_trim)
 
 
         if show_label:
@@ -384,3 +403,4 @@ def unfreeze_all(model, frozen=False):
     if isinstance(model, tf.keras.Model):
         for l in model.layers:
             unfreeze_all(l, frozen)
+
