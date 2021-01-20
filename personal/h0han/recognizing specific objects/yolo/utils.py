@@ -125,20 +125,23 @@ def image_preprocess(image, target_size, gt_boxes=None):
         gt_boxes[:, [1, 3]] = gt_boxes[:, [1, 3]] * scale + dh
         return image_paded, gt_boxes
 
-def save(path, image, classes[class_ind]):
+def save(path, image, classes_name):
 # 저장하고 싶은 path, image, image의 클래스를 넣고 저장한다.
     num_index = []
     file_list = os.listdir(path) # 디렉토리 내 파일 리스트 불러오고
     # 파일 이름에서 정규표현식 이용해서 인덱스 추가
-    for file in file_list:
-        lst = file.split('_'); idx = int(lst[1].split('.')[0]) # format : person_1.jpg --> 1
-        num_index.append(idx)
+    if len(file_list) != 0:
+        for file in file_list:
+            if '_' and '.jpg' in file:
+                lst = file.split('_'); idx = int(lst[1].split('.')[0]) # format : person_1.jpg --> 1
+                num_index.append(idx)
+            continue
 
     if len(num_index) != 0:
     # 인덱스에서 최댓값 찾고 최댓값 + 1로 인덱스 붙여 파일 이름으로 저장 --> 지정한 디렉토리 내에
-        cv2.imwrite(path + '{}_%s.jpg'.format(classes[class_ind]) % (max(num_index) + 1), image)
+        cv2.imwrite(path + '{}_%s.jpg'.format(classes_name) % (max(num_index) + 1), image)
     else:
-        cv2.imwrite(path + '{}_0.jpg'.format(classes[class_ind]), image)
+        cv2.imwrite(path + '{}_0.jpg'.format(classes_name), image)
 
 def draw_bbox(image, bboxes, classes=read_class_names(cfg.YOLO.CLASSES), show_label=True):
     num_classes = len(classes)
@@ -168,8 +171,7 @@ def draw_bbox(image, bboxes, classes=read_class_names(cfg.YOLO.CLASSES), show_la
         c1, c2 = (coor[1], coor[0]), (coor[3], coor[2])
         cv2.rectangle(image, c1, c2, bbox_color, bbox_thick)
         print('name: %s' %(classes[class_ind])+'  ')
-        print(c1)
-        print(c2)
+        print(c1); print(c2)
         x = int(coor[1])
         y = int(coor[0])
         x2 = int(coor[3])
@@ -180,7 +182,7 @@ def draw_bbox(image, bboxes, classes=read_class_names(cfg.YOLO.CLASSES), show_la
         # save(path, img_trim)
 
         if classes[class_ind] == "person":
-            cv2.imwrite(filename = './result_fig/person_%s.jpg' % i, image = img_trim)
+            save('./result_fig/', img_trim, "person")
 
 
         if show_label:
