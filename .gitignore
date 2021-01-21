@@ -7,6 +7,7 @@ data/
 
 #낙헌
 personal/nakon_zoe/3. Side Project/2021.01.25. Gesture Recognition/2021.01.19. Final_Step/3. img_data/img_data.npy
+personal\nakon_zoe\3. Side Project\2021.01.25. Gesture Recognition\2021.01.22. Wls_final\skeleton_estimation_train/skeleton_train_data.lmdb
 
 #ignore model
 personal/h0han/recognizing specific objects/tensorflow-yolov4-tflite/data/yolov4.weights
