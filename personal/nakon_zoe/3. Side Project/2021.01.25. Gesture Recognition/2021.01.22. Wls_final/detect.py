@@ -1,4 +1,4 @@
-
+import tensorflow as tf
 from absl import app, flags, logging
 from absl.flags import FLAGS
 flags.DEFINE_string("f", "", "kernel")
@@ -14,6 +14,7 @@ import os
 
 
 def main(_argv):
+    import tensorflow as tf
     config = ConfigProto()
     config.gpu_options.allow_growth = True
     session = InteractiveSession(config=config)
