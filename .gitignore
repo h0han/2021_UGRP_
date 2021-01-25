@@ -9,6 +9,8 @@ data/
 personal/nakon_zoe/3. Side Project/2021.01.25. Gesture Recognition/2021.01.19. Final_Step/3. img_data/img_data.npy
 personal/nakon_zoe/3. Side Project/2021.01.25. Gesture Recognition/2021.01.22. Wls_final/skeleton_estimation_train/skeleton_train_data.lmdb
 personal/nakon_zoe/3. Side Project/2021.01.25. Gesture Recognition/2021.01.22. Wls_final/checkpoints/
+personal/nakon_zoe/3. Side Project/2021.01.25. Gesture Recognition/2021.01.22. Wls_final/CNN_best_model.h5
+personal/nakon_zoe/3. Side Project/2021.01.25. Gesture Recognition/2021.01.22. Wls_final/CNN_best_model_sitter미흡.h5
 
 #현우
 personal/Nwoo/Gesture_Recognition/make_dataset/checkpoints/
