@@ -14,9 +14,9 @@ personal/nakon_zoe/3. Side Project/2021.01.25. Gesture Recognition/2021.01.22. W
 
 #현우
 personal/Nwoo/Gesture_Recognition/make_dataset/checkpoints/
-personal/Nwoo/Gesture_Recognition/main_work/CNN_best_model.h5
+personal/Nwoo/Side_Project/Gesture_Recognition/main_work/CNN_best_model.h5
 personal/Nwoo/Gesture_Recognition/presentation/
-personal/Nwoo/Gesture_Recognition/main_work/CNN_best_model_91_tf1.h5
+personal/Nwoo/Side_Project/Gesture_Recognition/main_work/CNN_best_model_91_tf1.h5
 
 #ignore model
 personal/h0han/recognizing specific objects/tensorflow-yolov4-tflite/data/yolov4.weights
