@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cff2bd7-7e78-4ef3-b513-101a6335de80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../personal/Nwoo/Gesture_Recognition/main_work/Final Work.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../personal/Nwoo/Gesture_Recognition/main_work/Final Work.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../personal/Nwoo/Gesture_Recognition/main_work/Final Work.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personal/Nwoo/Side_Project/Gesture_Recognition/main_work/Final Work.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../personal/Nwoo/Side_Project/Gesture_Recognition/main_work/Final Work.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personal/Nwoo/Side_Project/Gesture_Recognition/main_work/Final Work.py" beforeDir="false" afterPath="$PROJECT_DIR$/../personal/Nwoo/Side_Project/Gesture_Recognition/main_work/Final Work.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/seminar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/seminar.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +34,58 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../personal/Nwoo/Gesture_Recognition/main_work" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../personal/Nwoo/Side_Project/Gesture_Recognition/main_work/Final Work.py" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.Final Work">
+    <configuration name="11718 그대로 출력하기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="BOJ" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../알고리즘 공부/BOJ/11718 그대로 출력하기" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../알고리즘 공부/BOJ/11718 그대로 출력하기/11718 그대로 출력하기.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Final Work" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="main_work" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\pc\Anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../personal/Nwoo/Side_Project/Gesture_Recognition/main_work" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../personal/Nwoo/Side_Project/Gesture_Recognition/main_work/Final Work.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Final Work" />
+        <item itemvalue="Python.11718 그대로 출력하기" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -46,9 +101,34 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1650" y="398" key="FileChooserDialogImpl" timestamp="1612271605627">
+    <state x="1344" y="240" key="#Final_Work" timestamp="1612329343086">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1650" y="398" key="FileChooserDialogImpl/2560.435.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1612271605627" />
+    <state x="1344" y="240" key="#Final_Work/0.0.2560.1400/2560.435.1920.1040@0.0.2560.1400" timestamp="1612329343086" />
+    <state x="1650" y="398" key="FileChooserDialogImpl" timestamp="1612329075946">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1650" y="398" key="FileChooserDialogImpl/0.0.2560.1400/2560.435.1920.1040@0.0.2560.1400" timestamp="1612329075946" />
+    <state x="1650" y="398" key="FileChooserDialogImpl/2560.435.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1612275871572" />
+    <state width="2533" height="551" key="GridCell.Tab.0.bottom" timestamp="1612331841034">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2533" height="551" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.435.1920.1040@0.0.2560.1400" timestamp="1612331841034" />
+    <state width="2533" height="551" key="GridCell.Tab.0.center" timestamp="1612331841034">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2533" height="551" key="GridCell.Tab.0.center/0.0.2560.1400/2560.435.1920.1040@0.0.2560.1400" timestamp="1612331841034" />
+    <state width="2533" height="551" key="GridCell.Tab.0.left" timestamp="1612331841034">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2533" height="551" key="GridCell.Tab.0.left/0.0.2560.1400/2560.435.1920.1040@0.0.2560.1400" timestamp="1612331841034" />
+    <state width="2533" height="551" key="GridCell.Tab.0.right" timestamp="1612331841034">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2533" height="551" key="GridCell.Tab.0.right/0.0.2560.1400/2560.435.1920.1040@0.0.2560.1400" timestamp="1612331841034" />
+    <state x="294" y="181" key="SettingsEditor" timestamp="1612329306475">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="294" y="181" key="SettingsEditor/0.0.2560.1400/2560.435.1920.1040@0.0.2560.1400" timestamp="1612329306475" />
   </component>
 </project>

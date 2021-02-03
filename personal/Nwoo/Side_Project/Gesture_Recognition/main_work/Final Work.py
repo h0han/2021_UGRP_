@@ -1,23 +1,21 @@
 import easydict
-# from tf_pose.estimator import TfPoseEstimator
+import cv2
+import numpy as np
 from tf_pose.networks import get_graph_path, model_wh
 import os
-import tensorflow as tf
-from PIL import ImageFont, ImageDraw, Image
+import time
+
 import logging
 import math
 import slidingwindow as sw
-import cv2
-import numpy as np
-import time
+import tensorflow as tf
 from tf_pose import common
 from tf_pose.common import CocoPart
 from tf_pose.tensblur.smoother import Smoother
-import glob
+
+from PIL import ImageFont, ImageDraw, Image
 from sklearn.model_selection import train_test_split
 from tensorflow.keras.models import load_model
-
-
 
 # CNN 모델 load
 model = load_model("CNN_best_model_91_tf1.h5")
@@ -578,11 +576,11 @@ class TfPoseEstimator:
         return humans
 
 
-# TF-Pose, HOG descriptor 객체 생성
+# TF-Pose 객체 생성
 e = TfPoseEstimator(get_graph_path('mobilenet_thin'), target_size=(432, 368))
 
 count = 0
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 categories = ['pedestrian', 'sitter', 'taxier']
 
 while True:
@@ -591,8 +589,6 @@ while True:
 
     if not ret:
         break
-    # Bounding Box 그리기
-    detected, _ = hog.detectMultiScale(image)
 
     # Skeleton 그리기 with Background
     humans = e.inference(image, upsample_size=4.0)
