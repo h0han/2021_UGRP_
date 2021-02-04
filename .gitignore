@@ -17,6 +17,22 @@ personal/Nwoo/Side_Project/Gesture_Recognition/make_dataset/checkpoints/
 personal/Nwoo/Side_Project/Gesture_Recognition/main_work/CNN_best_model.h5
 personal/Nwoo/Side_Project/Gesture_Recognition/presentation/
 personal/Nwoo/Side_Project/Gesture_Recognition/main_work/CNN_best_model_91_tf1.h5
+personal/Nwoo/Side_Project/Gesture_Recognition/main_work/.idea
+personal/Nwoo/Side_Project/Gesture_Recognition/main_work/models
+personal/Nwoo/Side_Project/Gesture_Recognition/main_work/opencv-master
+personal/Nwoo/Side_Project/Gesture_Recognition/main_work/scripts
+personal/Nwoo/Side_Project/Gesture_Recognition/main_work/tf_pose
+
+personal/Nwoo/Side_Project/Gesture_Recognition/make_dataset/android
+personal/Nwoo/Side_Project/Gesture_Recognition/make_dataset/checkpoints
+personal/Nwoo/Side_Project/Gesture_Recognition/make_dataset/core
+personal/Nwoo/Side_Project/Gesture_Recognition/make_dataset/data
+personal/Nwoo/Side_Project/Gesture_Recognition/make_dataset/mAP
+personal/Nwoo/Side_Project/Gesture_Recognition/make_dataset/models
+personal/Nwoo/Side_Project/Gesture_Recognition/make_dataset/scripts
+personal/Nwoo/Side_Project/Gesture_Recognition/make_dataset/tf_pose
+
+
 
 #ignore model
 personal/h0han/recognizing specific objects/tensorflow-yolov4-tflite/data/yolov4.weights
